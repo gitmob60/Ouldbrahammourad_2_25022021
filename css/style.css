@@ -1,0 +1,272 @@
+/*  Projet P2  - 25/02/2021 */
+
+
+@font-face {
+    font-family: "Raleway";
+    src: url("polices/Raleway/static/Raleway.ttf");
+  }
+  
+ @font-face {
+    font-family: "Raleway-thin";
+    src: url("polices/Raleway/static/Raleway-Thin.ttf");
+  }
+
+  
+  h2, h3 {
+      color:black;
+      font-family: 'Raleway', Arial, serif;
+  }
+
+  body {
+    color: black;
+    font-family: 'Raleway', Arial, serif;
+    /* color: #0065FC;  Les couleurs de la charte sont le bleu #0065FC, et sa version plus claire #DEEBFF */
+  }
+
+  .header1 {
+    display: flex;  
+    align-items: center;  
+    justify-content: space-between;
+  }
+
+  #logo{
+    justify-self: left;
+  }
+  
+  
+  .headernav1{
+    font-family: 'Raleway', Arial, serif;
+    display: flex; 
+    align-items: center; 
+    margin-right: 8%;  
+  }
+  
+  .headernav1 a{
+    text-decoration: none; 
+  } 
+ 
+  .headernav1 a:hover {  /* Apparence au survol des liens */    
+   text-decoration: underline;
+   color: green;
+        }
+    
+  }
+  
+  #lien-hebergement{
+    margin: 10%;
+  }
+  
+   .bleue {
+    color: #0065FC;  
+   }
+
+  #lien-activites{
+   margin: 10%;
+  }
+  
+  .noire {
+    color: black;  
+   }
+  
+  #lien-inscrire{
+     font-weight: bold;
+     margin: 10%;
+  }
+
+  .rechercher-mobile {
+     display: none; 
+  }
+
+ .rechercher-desktop {
+   display: flex;
+   flex-direction: row;
+    height: 30px; 
+ }
+  .icone-map {
+    background-color: #F2F2F2;
+    background-color: #464343;  /* pour tests */
+    height: 30px;
+    width: 30px;
+    
+  }
+
+  .rechercher-desktop input{
+    height: 30px;
+  }
+    .bouton-recherche{
+    background-color: #0065FC;
+    color: white;
+    height: 30px; 
+    border-top-right-radius: 5px; 
+    border-bottom-right-radius: 5px; 
+  }
+  
+  
+  
+  
+  .header3 {
+    width: 60%;
+    display: flex;
+    padding-right: 10px; 
+    justify-content: space-between;;
+    margin: 2%;
+  
+  }
+  
+  
+  .choix {
+    border: 1px solid #0065FC;
+    /* border-radius: 10px;
+      
+    padding: 5px;
+    padding-left: 0; */
+  }
+
+  .icone-choix{
+    background-color: #DEEBFF;
+    border: 1px solid #0065FC;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px ;
+    margin-right: 10px;
+  }
+
+  .icone-info{
+    border: 1px solid #DEEBFF;
+    border-radius: 10px;
+    margin-right: 5px;
+  }
+
+  .fa-info {
+    color : #0065FC;
+    padding-right: 10px;
+    border-radius: 2px, solid, #0065FC;
+  }
+
+  .header4{
+    color : #0065FC;
+  }
+
+  #info{
+    color : black;
+  }
+  
+  .cadre-haut{
+    display: flex;
+    flex-direction: row;    
+  }
+  
+  
+  #populaires{
+    background-color:  #F2F2F2; /* Le fond de page gris */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    order: 2;
+    margin-left: 20px;
+    border-radius: 20px;
+  }
+  
+  
+  .header5 {
+    display:inline-flex;
+    justify-content: space-between;
+    font-size:25px;
+    font-weight: bold;
+    margin: 20px;
+  }
+  
+  #hebergements{
+    background-color:  #F2F2F2; /* Le fond de page gris */
+    flex-grow: 2;
+    order: 1;
+    border-radius: 20px;
+    width: 70%;
+  }
+  
+ 
+  
+  .header6 {
+    font-size:25px;
+    font-weight: bold;
+    margin: 20px;
+  }
+  
+  #groupe2{
+       background-color:  #F2F2F2; /* Le fond de page gris */
+       display: flex;
+       flex-direction: row; 
+       flex-wrap: wrap;
+       justify-content: space-between;
+       align-items: space-evenly;
+       width: 100%;
+     
+  }
+  
+  .boite-image-haut {
+    display: flex;
+    flex-direction: column; 
+    background-color: white;
+ /*   border: 5px solid white; */
+    border-radius: 20px;
+    width: 30%;
+  }
+  
+   .imgh {
+    width: 96%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 5px solid white;
+    object-fit: cover;
+}
+
+  .text-bas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     margin : 10px;
+  }
+  
+  .boite-image-gauche {
+    display: flex;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 20px;
+    width: 100%;
+    margin: 10px;
+   
+   }
+  
+  .imgg {
+ /*   width: 100%; */
+    flex: 1;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    object-fit: cover;
+    }
+
+  
+  .texte-droit{
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: center;
+    margin : 10px;
+    height: 100%;
+  }
+  
+   
+  .ligne3{
+    align-self: last baseline;
+  }
+
+ .ligne1{
+    font-weight: bold;
+  }
+  
+  .star-icon[data-active=true] {
+    color: #0065FC;
+  }
+    .star-icon[data-active=false] {
+    color: #F2F2F2;
+}
+
