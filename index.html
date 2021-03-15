@@ -4,7 +4,8 @@
     <head>
         <meta charset="utf-8" />
         <title>Reservia - P2</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" media="screen and (min-width: 1280px)" type="text/css" href="css/style.css">
+        <link rel="stylesheet" media="screen and (max-width: 1280px)" href="css/petite_resolution.css" />
         <script src="https://kit.fontawesome.com/1796b3e472.js" crossorigin="anonymous"></script>
     </head>
 
@@ -30,25 +31,25 @@
       </header>
   
         <div class="header2">
-            <h2>Trouvez votre hébergement pour des vacances de rêves</h2>
+            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre ville ou en pleine nature</p>
   
             <div class="rechercher-mobile">
-                <form method="post" action="traitement.backend">
-                    <p>
-                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                        <input type="text" name="ville" id="ville" placeholder="Marseille,France">
-                        <i class="fa fa-search" aria-hidden="true"></i>
-                    </p>
-                </form>
+                <div class="icone-map">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                </div>
+                <input type="text" name="ville" id="ville" placeholder="Marseille,France">
+                <div class="icone-search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
             </div>  
              
             <div class="rechercher-desktop">
-                <span class="icone-map">
+                <div class="icone-map">
                     <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                </span>
-                <input type="search"placeholder="Marseille,France"/>
-                <button class="bouton-recherche" type="button">Rechercher</button>
+                </div>
+                 <input type="text" name="ville" id="ville" placeholder="Marseille,France">
+                 <button class="bouton-recherche" type="button">Rechercher</button>
             </div>
   
        </div>
@@ -88,6 +89,8 @@
   
       </div>
   
+      </div>
+  
       <div class="header4">
             <span class ="icone-info">
                 <i class="fas fa-info" aria-hidden="true"></i>
@@ -105,26 +108,29 @@
             <div><i class="fa fa-line-chart" aria-hidden="true"></i></div>
         </div>  
         
-        <div class="boite-image-gauche">
-          <p>
-             <img class="imgg" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" height="200px" alt="Chambre à Marseilles" />
-          </p>
-            <div class="texte-droit">
-                <div class="ligne1">Hôtel Le soleil du matin</div>
-                <div class="ligne2">Nuit à partir de <strong>128€</strong></div>
-                <div class="ligne3">
-                     <i class="fas fa-star star-icon"  data-active="true"></i>
-                     <i class="fas fa-star star-icon"  data-active="true"></i>
-                     <i class="fas fa-star star-icon"  data-active="true"></i>
-                     <i class="fas fa-star star-icon"  data-active="true"></i>
-                     <i class="fas fa-star star-icon"  data-active="true"></i>                
-                </div>
-             </div>
-        </div>  
+        
+        <a href="#" class="lien2">
+          <div class="boite-image-gauche">
+            <p>
+               <img class="imgg" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" height="200px" alt="Chambre à Marseille" />
+            </p>
+              <div class="texte-droit">
+                  <div class="ligne1">Hôtel Le soleil du matin</div>
+                  <div class="ligne2">Nuit à partir de <strong>128€</strong></div>
+                  <div class="ligne3">
+                       <i class="fas fa-star star-icon"  data-active="true"></i>
+                       <i class="fas fa-star star-icon"  data-active="true"></i>
+                       <i class="fas fa-star star-icon"  data-active="true"></i>
+                       <i class="fas fa-star star-icon"  data-active="true"></i>
+                       <i class="fas fa-star star-icon"  data-active="true"></i>                
+                  </div>
+               </div>
+          </div> 
+        </a> 
         
         <div class="boite-image-gauche">
         <p>
-            <img class="imgg" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" height="200px" alt="Chambre à Marseilles">
+            <img class="imgg" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" height="200px" alt="Chambre à Marseille">
         </p>
             <div class="texte-droit">
                 <div class="ligne1">Au coeur de l'eau <br />Chambres d'hôtes</div>
@@ -139,9 +145,10 @@
             </div>
           </div>
         
+        
         <div class="boite-image-gauche">
         <p>
-            <img class="imgg" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" height="200px" alt="Chambre à Marseilles"/>  
+            <img class="imgg" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" height="200px" alt="Chambre à Marseille"/>  
         </p>
             <div class="texte-droit">
                 <div class="ligne1">Hôtel tout bleu et Blanc</div>
@@ -154,19 +161,20 @@
                      <i class="fas fa-star star-icon"  data-active="false"></i>                
                 </div>
             </div>
-        </div>   
-   
+        </div> 
+    
       </section>
       
       <section  id="Hebergements">
       
-        <div class="header6">Hébergements à Marseilles</div> 
+        <div class="header6">Hébergements à Marseille</div> 
         
         <div id="groupe2">   
         
+    
           <div class="boite-image-haut">
             <p>
-               <img class="imgh" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" height="200px" alt="Chambre à Marseilles"/>
+               <img class="imgh" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" height="200px" alt="Chambre à Marseille"/>
                
             </p> 
             <div class="texte-bas">
@@ -182,10 +190,12 @@
             </div>
           </div>
   
+  
           
+  
           <div class="boite-image-haut">
             <p>
-                <img class="imgh"  src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" height="200px" alt="Chambre à Marseilles">
+                <img class="imgh"  src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" height="200px" alt="Chambre à Marseille">
             </p>
             <div class="texte-bas">
                 <div class="ligne1">Hôtel du port</div>
@@ -199,10 +209,12 @@
                 </div>
             </div>
           </div>
+ 
           
+      
           <div class="boite-image-haut">
             <p>
-                <img class="imgh"  src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" height="200px" alt="Chambre à Marseilles"/>  
+                <img class="imgh"  src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" height="200px" alt="Chambre à Marseille"/>  
             </p>  
             <div class="texte-bas">
                 <div class="ligne1">Hôtel Les mouettes</div>
@@ -216,11 +228,12 @@
                 </div>
             </div>
           </div> 
+           
           
-          
+     
           <div class="boite-image-haut">
             <p>
-               <img class="imgh"  src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" height="200px" alt="Chambre à Marseilles"/>
+               <img class="imgh"  src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" height="200px" alt="Chambre à Marseille"/>
             </p> 
             <div class="texte-bas">
                 <div class="ligne1">Hôtel de la mer</div>
@@ -234,10 +247,13 @@
                 </div>
             </div>
           </div> 
+ 
           
+          
+  
           <div class="boite-image-haut">
             <p>
-                <img class="imgh"  src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" height="200px" alt="Chambre à Marseilles">
+                <img class="imgh"  src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" height="200px" alt="Chambre à Marseille">
             </p>
             <div class="texte-bas">
                 <div class="ligne1">Auberge le panier</div>
@@ -251,10 +267,12 @@
                 </div>
             </div>
           </div>
-          
+   
+             
+  
           <div class="boite-image-haut">
             <p>
-                <img class="imgh"  src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" height="200px" alt="Chambre à Marseilles"/>  
+                <img class="imgh"  src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" height="200px" alt="Chambre à Marseille"/>  
             </p>
             <div class="texte-bas">
                 <div class="ligne1">Hôtel chez Amina</div>
@@ -267,7 +285,8 @@
                      <i class="fas fa-star star-icon"  data-active="true"></i>                
                 </div>
             </div>
-          </div>  
+          </div> 
+  
         
         </div> 
           
@@ -275,13 +294,97 @@
         
   </div>
   
-  <div class=cadre-bas>
+  <div class="cadre-bas">
+  
       <section id="Activites">
-          <h3>Activités à Marseilles</h3>           
+      
+          <h3>Activités à Marseille</h3>      
+          
+          <div id="cadre3">
+          
+            <div class="boite-31">  
+                <a href="#" class="lien3"> 
+                    <div class="boite-image-31">
+                        <img class="img31"  src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" height="500px" alt="Vieux port à Marseille"/>
+                        <div class="ligne1">Vieux Port</div>                
+                    </div>
+               </a>     
+            </div>
+
+            <div class="boite-32">                  
+                <a href="#" class="lien3">
+                  <div classe="boite-image-32">
+                      <img class="img32"  src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" height="200px" width="300px" alt="Fort de Pomègues à Marseille"/>
+                      <div class="ligne1">Fort de Pomègues</div>                
+                  </div>
+                </a>
+                
+                <a href="#" class="lien3">
+                  <div class="boite-image-32">
+                      <img class="img32"  src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" height="200px" alt="Iles de Frioul à Marseille"/>
+                      <div class="ligne1">Îles du Frioul</div>                
+                  </div>
+                </a>
+         
+            </div>
+
+            <div class="boite-31">
+        
+                <a href="#" class="lien3">
+                  <div classe="boite-image-31">
+                      <img class="img31"  src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" height="500px" width="300px" alt="Parc National des Calanques à Marseille"/>
+                      <div class="ligne1">Parc National des Calanques</div>                
+                  </div>
+                </a>
+          
+            </div>
+
+            <div class="boite-32"> 
+            
+                <a href="#" class="lien3">
+                  <div classe="boite-image-32">
+                      <img class="img32"  src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" height="200px" alt="  Notre-Dame-de-la-Garde à Marseille"/>
+                      <div class="ligne1">Notre-Dame-de-la-Garde</div>  
+                  </div>
+                </a>              
+  
+                <a href="#" class="lien3">  
+                  <div classe="boite-32">
+                      <div class="boite-image-32">
+                      <img class="img32"  src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" height="200px" alt="  Parc Longchamp à Marseille"/>
+                      <div class="ligne1">Parc Longchamp</div>                
+                  </div>
+                </a>                  
+            </div>
+
+         </div>
       </section>
-   </div>
+    </div>
     
     </body>
+
+     <!-- FOOTER -->
+  <footer>
+    <div class="cadre-footer">
+      <div class="block-footer">
+        <div class="titre-footer">A propos</div>
+        <a href="#" class="lien-footer">Fonctionnement du site</a>
+        <a href="#" class="lien-footer">Conditions générales de vente</a>
+        <a href="#" class="lien-footer">Données et confidentialités</a>
+      </div>
+      <div class="block-footer">
+        <div class="titre-footer">Nos hébergement</div>
+        <a href="#" class="lien-footer">Charte qualité</a>
+        <a href="#" class="lien-footer">Soumettre votre hotel</a>
+      </div>
+      <div class="block-footer">
+        <div class="titre-footer">Assitance</div>
+        <a href="#" class="lien-footer">Centre d'aide</a>
+        <a href="#" class="lien-footer">Nous contacter</a>
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER -->
 
   
 </html>
