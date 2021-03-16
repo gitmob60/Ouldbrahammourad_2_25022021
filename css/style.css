@@ -19,11 +19,11 @@ h2, h3 {
 }
 
 body {
-  width: 1500px;
   margin-left: 5%;
   margin-right: 5%;
   color: black;
   font-family: 'Raleway', Arial, serif;
+  font-size: 16px;
   /* color: #0065FC;  Les couleurs de la charte sont le bleu #0065FC, et sa version plus claire #DEEBFF */
 }
 
