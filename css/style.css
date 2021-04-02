@@ -28,7 +28,6 @@ body {
 
 .header1 {
   display: flex;  
-  justify-content: space-between;
   align-items: center;  
 }
 
@@ -40,43 +39,51 @@ body {
   justify-self: left;
 }
 
-#headernav {
-  display: flex;  
-  justify-content: space-between;
-  justify-self: right;
-}
-
-.headernav11, .headernav12 {
+.headernav11 {
   font-family: 'Raleway', Arial, serif;
   display: flex; 
-  justify-content: space-between;
   align-items: center; 
-  margin-right: 70px;  
+  margin-left: 70%;
 }
 
-.headernav11 a{
+.headernav11 a {
   text-decoration: none; 
 } 
 
-.headernav11 a:hover {  /* Apparence au survol des liens */    
+.headernav11 a:hover { 
  text-decoration: underline;
  color: green;
-      }
+ }
+      
+.headernav11 a:visited {  
+   border-top: 5px solid blue;
+ }
 
-.headernav12 a{
+.headernav12 {
+  font-family: 'Raleway', Arial, serif;
+  display: flex; 
+  align-items: center; 
+  margin-left: 5%;
+}
+
+.headernav12 a {
   text-decoration: none; 
 } 
 
-.headernav12 a:hover {  /* Apparence au survol des liens */    
+.headernav12 a:hover {   
   text-decoration: underline;
   color: green;
  }
-  
+ 
+.lien-header a:visited {   
+   border-top: 25px solid #0065FC;
+ }
+ 
 #lien-hebergement{
-  margin: 10%;
-}
+  border-top: 3px solid blue;
+ }
 
- .bleue {
+.bleue {
   color: #0065FC;  
  }
 
@@ -92,6 +99,9 @@ body {
    font-weight: bold;
    margin: 10%;
 }
+
+
+
 
 .rechercher-mobile {
    display: none; 
@@ -152,6 +162,7 @@ body {
   border: 2px solid  #DEEBFF;  
   border-radius: 20px;
   align-items: center;
+  cursor: pointer;
 }
 
 .choix-icone {
@@ -196,7 +207,6 @@ body {
   flex-direction: row;    
 }
 
-
 #populaires{
   background-color:  #F2F2F2; /* Le fond de page gris */
   display: flex;
@@ -208,6 +218,9 @@ body {
   padding-right: 10px;
 }
 
+#populaires h3 {
+    display: none;
+}
 
 .header5 {
   display:inline-flex;
@@ -277,11 +290,11 @@ body {
   object-fit: cover;
 }
 
-.text-bas{
+.texte-bas{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-   margin : 10px;
+  padding-left : 10px
 }
 
 .boite-image-gauche {
@@ -309,20 +322,32 @@ body {
 
 .texte-droit{
   display: flex;
-  flex: 2;
+  flex: 2; 
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   margin : 10px;
   height: 100%;
 }
 
  
-.ligne3{
+.texte-droit .ligne3{
   align-self: last baseline;
+  margin-bottom: 15px;
+}
+
+.texte-droit .ligne1{
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 .ligne1{
   font-weight: bold;
+}
+
+
+.ligne-blanche {
+  color: white;
+  flex: 1;
 }
 
 .star-icon[data-active=true] {
@@ -330,6 +355,10 @@ body {
 }
   .star-icon[data-active=false] {
   color: #F2F2F2;
+}
+
+#hebergements h3 {
+  cursor: pointer;
 }
 
 #activites{
@@ -371,14 +400,17 @@ body {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  width: 23%;
+  width: 19%;
   min-width: 200px;
+  box-shadow: 5px 5px 3px #F2F2F2;
 }
 
 .img31 {
-  width: 310px;
+  width: 300px;
   height: 500px;
   object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   border: 5px solid white;
 }
 
@@ -386,25 +418,47 @@ body {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  width: 23%;
-
+  width: 19%;
 }
 
 .boite-image-32 {
   display: flex;
   flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 5px 5px 3px #F2F2F2;
 }
 
+
 .img32 {
-   width: 310px;
-   height: 230px;
+   width: 300px;
+   max-height: 270px;     
    object-fit: cover;
    border-top-left-radius: 20px;
    border-top-right-radius: 20px;
-   border: 5px solid white;                /* ajouter ombre */
+   border: 5px solid white;               
 }
 
-/*  Footer  */
+
+.boite-32:nth-child(1) .boite-image-32:nth-child(1) {
+  height: 66%;
+}
+
+.boite-32:nth-child(2) .boite-image-32:nth-child(2) {
+  height: 66%;
+}
+
+.boite-image-31 .ligne1{
+     width: 100%;
+     display: inline;
+     margin-left: 5%;
+}
+
+.boite-image-32 .ligne1{
+     width: 100%;
+     display: inline;
+     margin-left: 5%;
+ }
+
 
 .footer {
   background-color: #F2F2F2;

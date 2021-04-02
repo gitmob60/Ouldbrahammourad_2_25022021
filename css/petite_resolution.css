@@ -27,10 +27,6 @@ body {
 }
 
 .header1 {
-    display: none;
-}
-
-.header1-small {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; 
@@ -39,52 +35,98 @@ body {
   margin : 10px;
 }
 
-#logo-small{
+#logo{
   align-items: center;
-  flex-grow: 3;
+  flex-grow: 2;
   justify-self: left;
 } 
 
+.headernav11 {
+  font-family: 'Raleway', Arial, serif;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center; 
+  order : 2;
+  
+}
 
-#lien-inscrire-small {
-  margin-right: 8%;  
-  margin-left: 30%;
+.headernav11 a {
+  text-decoration: none; 
+} 
+
+.headernav11 a:hover { 
+ text-decoration: underline;
+ color: green;
+      }
+      
+.headernav11 a:visited {  
+   border-top: 5px solid blue;
+ }
+
+.headernav12 {
+  font-family: 'Raleway', Arial, serif;
+  display: flex; 
+  align-items: center; 
+  margin-left: 30%;  
+  order: 1;
+}
+
+.headernav12 a {
+  text-decoration: none; 
+} 
+
+.headernav12 a:hover {   
+  text-decoration: underline;
+  color: green;
+ }
+ 
+ .headernav12 a:visited { 
+   border-top: 5px solid blue;
+ }
+ 
+ /*
+ 
+ #lien-inscrire a {
+  text-decoration: none; 
+} 
+
+#lien-activites a {
+  text-decoration: none; 
+} 
+
+#lien-hebergement a {
+  text-decoration: none; 
+} 
+
+
+#lien-inscrire {
+  margin-right: 50%;  
   font-weight: bold;
 }
 
-#lien-hebergement-small {
-  margin-left: 2%;  
+#lien-hebergement {
+  margin-left: 5%; 
+  margin-right: 20%;  
 }
 
-#lien-activites-small {
-  margin-right: 8%; 
+#lien-activites {
+  margin-left: 8%; 
 }
 
+*/
 
 
-#lien-inscrire-small a{
-  text-decoration: none; 
-} 
-
-#lien-activites-small a{
-  text-decoration: none; 
-} 
-
-#lien-hebergement-small a{
-  text-decoration: none; 
-} 
-
-#lien-inscrire-small a:hover {  /* Apparence au survol des liens */    
+#lien-inscrire a:hover {  /* Apparence au survol des liens */    
  text-decoration: underline;
  color: green;
  }
  
- #lien-activites-small a:hover {  /* Apparence au survol des liens */    
+ #lien-activites a:hover {  /* Apparence au survol des liens */    
  text-decoration: underline;
  color: green;
  }
  
- #lien-hebergement-small a:hover {  /* Apparence au survol des liens */    
+ #lien-hebergement a:hover {  /* Apparence au survol des liens */    
  text-decoration: underline;
  color: green;
  }
@@ -168,6 +210,7 @@ body {
   align-items: center;
   margin-right: 50px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .choix-icone {
@@ -224,6 +267,9 @@ body {
   padding-right: 10px;
 }
 
+#populaires h3 {
+    display: none;
+}
 
 .header5 {
   display:inline-flex;
@@ -293,12 +339,11 @@ body {
   object-fit: cover;
 }
 
-.text-bas{
+.texte-bas{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-   margin : 10px;
-   padding-left : 10px;
+  justify-content: space-around;
+  padding-left : 10px;
 }
 
 .boite-image-gauche {
@@ -330,18 +375,28 @@ body {
   display: flex;
   flex: 2;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   margin : 10px;
   height: 100%;
 }
 
- 
-.ligne3{
-  align-self: last baseline;
+.ligne-blanche {
+  color: white;
+  flex: 1;
 }
-
+ 
 .ligne1{
   font-weight: bold;
+}
+
+.texte-droit .ligne3{
+  align-self: last baseline;
+  margin-bottom: 5px;
+}
+
+.texte-droit .ligne1{
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .star-icon[data-active=true] {
@@ -360,15 +415,15 @@ body {
 }
 
 #hebergements h3 {
-    margin-left: 15px ;
-}
+   margin-left: 15px ;
+   cursor: pointer;
+} 
 
 #activites{
     display: flex;
     flex-direction: column;    
     min-width: 340px;
     justify-content: space-evenly;
-    align-items: start;
 }
 
 #activites h3 {
@@ -400,10 +455,13 @@ body {
 .boite-31 {
   display: flex;
   flex-direction: column;
+  box-shadow: 5px 5px 3px #F2F2F2;
+  margin-bottom: 25px;
+  border-radius: 20px;
   }
 
 .img31 {
-   width: 100%;
+   width: 98%;
    height: 170px;
    object-fit: cover;
    border-top-left-radius: 20px;
@@ -415,16 +473,19 @@ body {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
+
 }
 
 .boite-image-32 {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
+  box-shadow: 5px 5px 3px #F2F2F2;
+  margin-bottom: 15px;
 }
 
 .img32 {
-   width: 100%;
+   width: 98%;
    height: 170px;
    object-fit: cover;
    border-top-left-radius: 20px;
@@ -432,18 +493,19 @@ body {
    border: 5px solid white;              
 }
    
-.boite-image31 ligne1{
+.boite-image-31 .ligne1{
      width: 100%;
      display: inline;
-     margin-bottom: 30px;
+     margin-left: 5%;
 }
 
-.boite-image32 ligne1{
+.boite-image-32 .ligne1{
      width: 100%;
      display: inline;
-     margin-bottom: 30px;
-}
-
+     margin-left: 5%;
+ }
+ 
+ 
 /*  Footer  */
 
 .footer {
