@@ -39,7 +39,7 @@ body {
   font-family: 'Raleway', Arial, serif;
   display: flex; 
   align-items: center; 
-  margin-left: 70%;
+  margin-left: 60%;
   flex-grow: 3;
 }
 
@@ -434,7 +434,9 @@ body {
 
 .footer {
   background-color: #F2F2F2;
+  position: absolute;
   width: 100%;
+  left: 0;
  }
  
 .cadre-footer {
